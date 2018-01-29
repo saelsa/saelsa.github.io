@@ -1,0 +1,96 @@
+/* MEDIA QUERIES */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+html {
+   
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(laptop-notebook-working-outside-min.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.25;
+    
+}
+
+.container {
+    
+
+}
+
+/* REUSABLE ITEMS */
+
+/* Text */
+
+h1 {
+    color: #fff;
+    font-family: 'Supermercado One', cursive;
+    font-weight: 400;
+    font-size: 600%;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*Buttons*/
+
+button {
+    margin-bottom: 20%;
+    vertical-align: baseline;
+    background-color: #fff59d;
+    padding: 5%;
+    border: hidden;
+    border-radius: 20px;
+    font-family: 'Supermercado One', cursive;
+    cursor: pointer;
+    
+}
+
+
+/* SECTION START */ 
+
+.section-start {
+    max-width: 300px;
+    margin: 0 5%;
+    float: right;
+    text-align: right;
+    display: flex;
+    flex-flow: column nowrap; 
+    height: 100vh;
+    justify-content: space-between
+    
+    
+}
+
+.section-start p {
+    color: #e5e5e5;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
