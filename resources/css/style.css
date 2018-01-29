@@ -10,8 +10,10 @@ body,
 html {   
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
     
 }
 
@@ -35,8 +37,9 @@ h1 {
     color: #fff;
     font-family: 'Supermercado One', cursive;
     font-weight: 400;
-    font-size: 600%;
+    font-size: 400%;
     text-align: right;
+    margin-bottom: 5%;
 }
 
 .hide {
@@ -47,22 +50,24 @@ h1 {
 /*Buttons*/
 
 button {
-    margin: 10% 0;
+
     vertical-align: baseline;
     background-color: #fff59d;
     padding: 2%;
     border: hidden;
     border-bottom: 3px solid #fff59d;
-    font: 400 40px 'Supermercado One', cursive;
+    font: 400 15px 'Supermercado One', cursive;
     cursor: pointer;
     align-items: baseline;
     
 }
 
+/* Other */ 
 
 
 
-/* SECTION START */ 
+
+/* SECTION START - LANDING PAGE */ 
 
 .section-start {
     margin:  5%;
@@ -74,10 +79,14 @@ button {
 
 .section-start p {
     color: #e5e5e5;
-    margin: 5% 0;
-
+    margin: 5% 0 10% 0;
     
 }
+
+
+/* MAIN PAGE */
+
+
 
 
 
