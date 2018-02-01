@@ -14,20 +14,16 @@ html {
     line-height: 1.25;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    
-}
-
-.container-1 {
-    
+    color: #505050;
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(laptop-notebook-working-outside-min.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     
-
 }
+
+
 
 /* REUSABLE ITEMS */
 
@@ -42,9 +38,35 @@ h1 {
     margin-bottom: 5%;
 }
 
-.hide {
-    display: none;
+.section-left h1 {text-align: center;}
+.section-left h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
+
+.section-start p,
+.section-left p {
+    color: #e5e5e5;
+    margin: 5% 0 10% 0;
+    
+}
+
+/*Lists*/
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    padding: 10px 0;
+}
+
 
 
 /*Buttons*/
@@ -62,12 +84,34 @@ button {
     
 }
 
+/* Icons */ 
+
+i {
+    padding: 20px 20px 10px 0;
+}
+
+
+
 /* Other */ 
 
+.hide {
+    display:none;
+}
 
 
 
 /* SECTION START - LANDING PAGE */ 
+
+.container-1 {
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(laptop-notebook-working-outside-min.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 
 .section-start {
     margin:  5%;
@@ -77,24 +121,58 @@ button {
     
 }
 
-.section-start p {
-    color: #e5e5e5;
-    margin: 5% 0 10% 0;
-    
-}
+
 
 
 /* MAIN PAGE */
 
+.section-left {
+    
+    padding: 5%;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(laptop-notebook-working-outside-min.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
+.section-right {
 
+    display: flex;
+    flex-flow: column;
+    align-content: stretch;
+}
+.title {
+    height: 16.666666vh;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Supermercado One', cursive;
+    border: 1px solid rgba(80, 80, 80, 0.45);
+    color: #000;
+}
 
+.title-1 {
+    background-color: #cbc26d;
+}
 
+.title-2 {
+    background-color: #fff59d;
 
+}
 
+.title-3 {
+    background-color: #ffffcf;
+}
 
+.initial {
+    height: 50vh;
+}
 
-
+.content {
+    min-height: 40px;
+    background-color: #fff;
+    padding: 10px;
+}
 
 
 
