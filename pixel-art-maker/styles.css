@@ -1,77 +1,78 @@
-/* GENERAL */ 
+/* GENERAL */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.92), rgba(255, 255, 255, 0.39)), url(https://static.pexels.com/photos/265047/pexels-photo-265047.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    color: #505050;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    text-align: center;
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.92),
+      rgba(255, 255, 255, 0.39)
+    ),
+    url(https://static.pexels.com/photos/265047/pexels-photo-265047.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #505050;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  text-align: center;
 }
-
 
 /* REUSABLE COMPONENTS */
 
-/* Text */ 
+/* Text */
 
 h1 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 300%;
-    margin: 2% auto 2% auto;
-    color: #fff176;
+  font-family: "Rock Salt", cursive;
+  font-size: 300%;
+  margin: 2% auto 2% auto;
+  color: #fff176;
   /*background: -webkit-linear-gradient(#fff176, rgba(250, 237, 117, 0.62));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
 }
 
-
-
 h2 {
-    font-size: 200%;
-    margin: 0 auto 5% auto;
-    color: #000;
+  font-size: 200%;
+  margin: 0 auto 5% auto;
+  color: #000;
 }
 
 h3 {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 .second-view > h1 {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 .second-view > h2 {
-    font-size: 100%;
+  font-size: 100%;
 }
 
-/* Other */ 
+/* Other */
 
 .box {
-    padding: 0 5%;
+  padding: 0 5%;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .row {
-    display: inline;
-    margin: 10px auto;
+  display: block;
+  margin: 10px auto;
 }
 
-/* Switch */ 
+/* Switch */
 
 /* The switch - the box around the slider */
 .switch {
@@ -82,7 +83,9 @@ h3 {
 }
 
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+.switch input {
+  display: none;
+}
 
 /* The slider */
 .slider {
@@ -93,8 +96,8 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -105,8 +108,8 @@ h3 {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -132,327 +135,309 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* SECTIONS */ 
+/* SECTIONS */
 
-
-/* FORM */ 
-
+/* FORM */
 
 input {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 80%;
-    font-weight: 300;
-    margin: 0.5%;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 80%;
+  font-weight: 300;
+  margin: 0.5%;
 }
 
 fieldset {
-    padding: 2%;
-    border: hidden;
+  padding: 2%;
+  border: hidden;
 }
 
-input[type=number] {
-    width: 20%;
+input[type="number"] {
+  width: 20%;
 }
 
-input[type=submit],
-input[type=reset] {
-    padding: 2% 5% 2% 5%;
-    margin: 1%;
+input[type="submit"],
+input[type="reset"] {
+  padding: 2% 5% 2% 5%;
+  margin: 1%;
 }
 
 #submit-grid {
-    background: #fff176; 
-    border-style: hidden;
-    border-radius: 5%;
-    box-shadow: 1px 1px rgba(80, 80, 80, 0.46);
+  background: #fff176;
+  border-style: hidden;
+  border-radius: 5%;
+  box-shadow: 1px 1px rgba(80, 80, 80, 0.46);
 }
 
 #submit-grid:hover {
-    color: #fff176; 
-    background: #000;
-    border-style: hidden;
-    border-radius: 5%;
-    box-shadow: 2px 2px rgba(80, 80, 80, 0.46);
-    transition: background 0.2s linear;
+  color: #fff176;
+  background: #000;
+  border-style: hidden;
+  border-radius: 5%;
+  box-shadow: 2px 2px rgba(80, 80, 80, 0.46);
+  transition: background 0.2s linear;
 }
 
-*:focus {outline:none;
+*:focus {
+  outline: none;
 
-border-style: hidden;
-border-bottom: 2px solid #cabf45;
+  border-style: hidden;
+  border-bottom: 2px solid #cabf45;
 }
-    
-/* TABLE */ 
+
+/* TABLE */
 
 table {
-    border-collapse: collapse;
-
+  border-collapse: collapse;
 }
-
 
 #pixel-canvas:hover {
   cursor: pointer;
-  cursor: url(font-awesome_4-7-0_paint-brush_20_0_040404_none.png) 4 15, pointer; 
+  cursor: url(font-awesome_4-7-0_paint-brush_20_0_040404_none.png) 4 15, pointer;
 }
 
 tr {
-    height: 10px;
+  height: 10px;
 }
 
 td {
-    width: 10px;
-    border: 1px dotted rgba(80, 80, 80, 0.46);
-    background: white;
+  width: 10px;
+  border: 1px dotted rgba(80, 80, 80, 0.46);
+  background: white;
 }
 
 #pixel-canvas > td {
-    border-style: dotted;
+  border-style: dotted;
 }
 
+/* FIRST */
 
-/* FIRST */ 
-
-
-/* Explore animations */ 
+/* Explore animations */
 
 body:hover #td-heart-1 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.05s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.05s;
 }
 
 body:hover #td-heart-2 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.1s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.1s;
 }
 
 body:hover #td-heart-3 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.15s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.15s;
 }
 
 body:hover #td-heart-4 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.2s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.2s;
 }
 
 body:hover #td-heart-5 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.25s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.25s;
 }
 body:hover #td-heart-6 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.3s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.3s;
 }
 body:hover #td-heart-7 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.35s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.35s;
 }
 body:hover #td-heart-8 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.4s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.4s;
 }
 body:hover #td-heart-9 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.45s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.45s;
 }
 body:hover #td-heart-10 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.5s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.5s;
 }
 body:hover #td-heart-11 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.55s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.55s;
 }
 body:hover #td-heart-12 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.6s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.6s;
 }
 body:hover #td-heart-13 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.65s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.65s;
 }
 body:hover #td-heart-14 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.7s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.7s;
 }
 body:hover #td-heart-15 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.75s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.75s;
 }
 body:hover #td-heart-16 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.8s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.8s;
 }
 body:hover #td-heart-17 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.85s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.85s;
 }
 body:hover #td-heart-18 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.9s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.9s;
 }
 body:hover #td-heart-19 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 0.95s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 0.95s;
 }
 body:hover #td-heart-20 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.0s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1s;
 }
 body:hover #td-heart-21 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.05s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.05s;
 }
 body:hover #td-heart-22 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.1s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.1s;
 }
 body:hover #td-heart-23 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.15s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.15s;
 }
 body:hover #td-heart-24 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.2s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.2s;
 }
 body:hover #td-heart-25 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.25s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.25s;
 }
 body:hover #td-heart-26 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.3s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.3s;
 }
 body:hover #td-heart-27 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.35s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.35s;
 }
 body:hover #td-heart-28 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.4s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.4s;
 }
 body:hover #td-heart-29 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.45s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.45s;
 }
 body:hover #td-heart-30 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.5s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.5s;
 }
 body:hover #td-heart-31 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.55s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.55s;
 }
 body:hover #td-heart-32 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.6s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.6s;
 }
 body:hover #td-heart-33 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.65s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.65s;
 }
 body:hover #td-heart-34 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.7s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.7s;
 }
 body:hover #td-heart-35 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.75s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.75s;
 }
 body:hover #td-heart-36 {
-    background-color: red;
-    transition: background 0.1s linear;
-    transition-delay: 1.8s;
+  background-color: red;
+  transition: background 0.1s linear;
+  transition-delay: 1.8s;
 }
 
-
-/* Grid */ 
-
+/* Grid */
 
 .right {
-    display: grid;
-    grid-auto-columns: repeat(5, 1fr);
-    grid-auto-rows: minmax(200px, auto);
-    margin: 5% auto;
-    max-width: 700px;
-    
+  display: grid;
+  grid-auto-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  margin: 5% auto;
+  max-width: 700px;
 }
 
 section:nth-child(1) {
-    grid-column: 1/5; 
+  grid-column: 1/5;
 }
 
 section:nth-child(2) {
-    grid-column: 2/3;
+  grid-column: 2/3;
 }
 
 section:nth-child(3) {
-    grid-column: 3/4;
-        
+  grid-column: 3/4;
 }
 
+/* SECOND */
 
-/* SECOND */ 
-
-/* Grid */ 
-
+/* Grid */
 
 .container.second-view {
-    display: flex;
-    margin: 5% auto;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  margin: 5% auto;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .second-view > .right {
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0;  
-}
-
-fieldset.second-view {
-    display: flex;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
 }
 
 section {
-    padding: 5px;
+  padding: 5px;
 }
-
-
-
