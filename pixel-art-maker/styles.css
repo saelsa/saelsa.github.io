@@ -441,3 +441,8 @@ section:nth-child(3) {
 section {
   padding: 5px;
 }
+
+fieldset.second-view {
+  display: flex;
+  flex-flow: column;
+}
