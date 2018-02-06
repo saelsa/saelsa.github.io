@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/ionicons.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">    
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <title> Paulina&amp;Lukas</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/manifest.json">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+    <header>
+        <div id="home" class="wedding-box">
+            <h1>Paulina <i class="ion-ios-heart-outline icon-small"></i> Lukas</h1>
+        </div>
+        <nav>
+            <div class="row nav-row">
+                <div class="left">
+                    <a href="#home" id="js--home-anchor" class="hide"><img class="logo" src="vendors/img/font-awesome_4-7-0_heart-o_40_0_d24d57_none.png" alt="heart"></a>
+                </div>
+                <div class="center">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#anmeldung">Anmeldung</a></li>
+                        <li><a href="#uebersicht">Übersicht</a></li>
+                        <li><a href="#anfahrt">Anfahrt</a></li>                    
+                    </ul> 
+                </div>  
+                 
+                <div class="right">
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>   
+                </div>     
+            </div>
+        </nav>
+    </header>
+        <section class="wedding-intro">
+            <h1>Hochzeit</h1>
+        </section>
+    <section id="anmeldung" class="section-anmeldung js--section-anmeldung">
+        <div class="anmeldung-box">
+           <div class="row">
+                <h2>Anmeldung</h2>
+                <p> Bitte gib uns spätestens bis zum 01. Juli Bescheid, ob du an unserem besonderen Tag teilnehmen kannst. Am einfachsten für uns geht das direkt hier über unsere Umfrage. Deswegen jetzt die Frage aller Fragen:</p>
+            </div>
+        
+            <div class="row" id="form">
+                <p><span>Möchtest du mit uns am 24.08. unsere Hochzeit feiern? </span></p>
+            </div>
+           
+            <div class="row">
+               <div class="buttons">
+                <button class="btn-survey js--btn-yes">Ja, ich will!</button>
+                <button class="btn-survey js--btn-no">Nein, leider nicht :&#40;</button> 
+               </div>           
+            </div>
+        </div>
+        
+            
+            <div class="row hide" id="form-yes">   
+                <form action="mailer-yes.php" method="post" class="anmeldung">
+
+                    <div class="row">
+                        <p>Super! Das freut uns zu hören! Wir bräuchten nur noch ein paar Infos von dir</p>
+                    </div>
+
+                    <div class="row">              
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="text" name="name" id="name" placeholder="Dein Name" required>
+                        </div>
+                    </div>            
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="text" name="email" id="email" placeholder="Deine Email-Adresse" required>
+                        </div>
+                    </div>              
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Wen möchtest du anmelden?</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="radio" name="anzahl-gaeste" value="0" checked required>Nur mich<br>
+                            <input type="radio" name="anzahl-gaeste" value="1">Noch weitere Personen<br>
+                            <textarea name="gaeste" class="hide" id="gaeste" cols="30" rows="5" placeholder="Bitte gib alle Namen an"></textarea>
+                        </div>
+                    </div> 
+                    <div class="row">              
+                        <div class="col span-1-of-3">
+                            <label for="music">Hast du einen Musikwunsch für die Party?</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="text" name="music" placeholder="Dein Musikwunsch" cols="30">
+                        </div>
+                    </div>  
+                    
+                    <div class="row">              
+                        <div class="col span-1-of-3">
+                            <label for="comment">Gibt es sonst noch etwas, das du uns mitteilen möchtest? Z.B. bestimmte Essenseinschränkungen?</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <textarea name="comment" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="submit" value="Abschicken">
+                        </div>
+                    </div>                  
+
+                </form>
+
+            </div>
+        
+         
+ 
+           
+            <div class="row hide" id="form-no">   
+                <form action="mailer-no.php" method="post" class="anmeldung">
+
+                    <div class="row">
+                        <p>Oh, das ist schade! </p>
+                    </div>
+                    <div class="row">              
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="text" name="name" id="name" placeholder="Dein Name" required>
+                        </div>
+                    </div>            
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="text" name="email" id="email" placeholder="Deine Email-Adresse" required>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Für wen sagst du ab?</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="radio" name="anzahl-absagen" value="0" checked>Nur mich<br>
+                            <input type="radio" name="anzahl-absagen" value="1">Noch weitere Personen<br>
+                            <textarea id="absagen" class="hide" name="absagen" cols="30" rows="5" placeholder="Bitte gib alle Namen an"></textarea>
+                        </div>
+                    </div>  
+                    <div class="row">              
+                        <div class="col span-1-of-3">
+                            <label for="comment">Gibt es sonst noch etwas, das du uns mitteilen möchtest?</label>    
+                        </div>
+                        <div class="col span-1-of-3">
+                            <textarea name="comment" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <input type="submit" value="Abschicken">
+                            </div>
+                    </div>                  
+
+                </form>
+
+
+                
+            </div> 
+  
+           
+<!--              <div class="row">
+                    
+                        <?php
+                    
+                        if($_GET['success']==1) {
+                            echo "<div class=\"form-messages success\">
+                               Danke! Deine Antwort wurde uns zugeschickt.
+                           </div>";
+                        } 
+                    
+                        if($_GET['success']== -1) {
+                            echo "<div class=\"form-messages error\">
+                               Ups! Da ist was schief gegangen. Bitte probier es noch einmal. 
+                            </div>";
+                        }             
+                    
+                        ?>       
+                    
+                         </div>   -->      
+            
+    </section>
+    <section id="uebersicht" class="section-uebersicht">
+            <h2>Übersicht</h2>
+            <h3>Alles was ihr wissen müsst auf einen Blick</h3>
+<div class="row js--wp-1">
+            <div class="col span-1-of-4 box">
+                <i class="ion-calendar icon-big"></i>
+                <h4>Wann?</h4>
+                <p>Wir feiern unsere Hochzeit am 24.08.2017 um 15:00           
+                </p>
+            </div>              
+               <div class="col span-1-of-4 box">
+                <i class="ion-home icon-big"></i>
+                <h4>Wo?</h4>
+                <p>In unserem schönen Garten der Loremstraße.        
+                </p>
+            </div>              
+               <div class="col span-1-of-4 box">
+                <i class="ion-tshirt-outline icon-big"></i>
+                <h4>Was zieh ich an?</h4>
+                <p>Es gibt keinen Dresscode. Bitte bedenkt jedoch, dass wir vor haben im Garten zu feiern. Für gutes Wetter können wir leider nicht garantieren.      
+                </p>
+            </div>                 
+               <div class="col span-1-of-4 box">
+                <i class="ion-bag icon-big"></i>
+                <h4>Was bringe ich mit?</h4>
+                <p>Am meisten freuen wir uns darüber, dass ihr mit uns gemeinsam feiern wollt. Deswegen bringt einfach eure allerbeste Laune. Gegen eine kleine finanzielle Unterstützung haben wir aber natürlich auch nichts.         
+                </p>
+            </div>              
+        </div>         
+        
+    </section>
+    
+
+    <section id="anfahrt" class="section-anfahrt">
+       <div class="row">
+           <div class="map-box col span-2-of-3">
+                <div class="map"> </div>   
+           </div>
+           <div class="address-box col span-1-of-3">
+               <h4>Adresse</h4>
+               <p>Loremstr.333 <br>22222 Lorem</p>
+               <h4>Anfahrt mit dem Auto</h4>
+               <p>Einfach über die Autobahn die fast direkt bis nach Bergedorf fährt</p>
+               <h4>Anfahrt mit dem Nahverkehr</h4>
+               <p>Mit der S-Bahn bis nach Bergedorf</p>
+           </div>
+       </div>
+        
+    </section>
+    
+    
+    <footer>
+        <p>Copyright &copy; Sarah Elena </p>
+        
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="vendors/js/gmaps.js"></script>
+<body>
+   
+    
+</body>
+</html>
