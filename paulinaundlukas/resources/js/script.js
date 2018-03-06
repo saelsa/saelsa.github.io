@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
-//hide/unhide navigation at certain waypoints 
+//hide/unhide navigation at certain waypoints
     $('.js--section-anmeldung').waypoint(function(direction) {
         if (direction == "down") {
-           $('nav').addClass('sticky'); 
+           $('nav').addClass('sticky');
            $('#js--home-anchor').removeClass('hide');
         } else {
            $('nav').removeClass('sticky');
            $('#js--home-anchor').addClass('hide');
         }
     }, {
-        offset: '60'
+        offset: '40'
     });
-    
-/* Navigation scroll */ 
-//credits to https://css-tricks.com/snippets/jquery/smooth-scrolling/    
-    
+
+/* Navigation scroll */
+//credits to https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
     // Select all links with hashes
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
@@ -24,8 +24,8 @@ $(document).ready(function() {
       .click(function(event) {
         // On-page links
         if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
           location.hostname == this.hostname
         ) {
           // Figure out element to scroll to
@@ -51,57 +51,73 @@ $(document).ready(function() {
             });
           }
         }
-      });    
-   
+      });
 
-/* Animations on scroll */ 
+
+/* Animations on scroll */
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
         offset: '80%'
-    });    
-    
-/* Mobile navigabtion */
-    
-    $('.js--nav-icon').click(function() { 
+    });
+
+/* Mobile navigation */
+
+    $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
-        
+
         nav.slideToggle(200);
         if (icon.hasClass('ion-navicon-round')) {
             icon.addClass('ion-close-round');
             icon.removeClass('ion-navicon-round');
         } else {
             icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round');            
-        }    
-                                         
+            icon.removeClass('ion-close-round');
+        }
+
     });
-    
+
     $('.main-nav li').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
-        
-        if (icon.hasClass('ion-close-round')) {
-        nav.slideToggle(200);   
+
+        if ($(window).width() < 767 && icon.hasClass('ion-close-round')) {
+        nav.slideToggle(200);
         icon.addClass('ion-navicon-round');
-        icon.removeClass('ion-close-round');  
+        icon.removeClass('ion-close-round');
         };
     });
-    
+
+    $(window).resize(function(){
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        if ($(window).width() > 767){
+            nav.css("display", "block");
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            nav.css("display", "none");
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+
+    });
+
 /*Anmeldung form*/
-    
+
     $('.js--btn-yes').click(function() {
         $('#form-yes').removeClass('hide');
         $('#form-no').addClass('hide');
     });
-    
+
     $('.js--btn-no').click(function() {
         $('#form-no').removeClass('hide');
         $('#form-yes').addClass('hide');
     });
-    
-    
+
+
 
     $('input[type=radio][name=anzahl-gaeste]').change(function() {
         if (this.value == '0') {
@@ -120,27 +136,7 @@ $(document).ready(function() {
             $('#absagen').removeClass('hide');
         }
     });
-    
-    
-    
-/* Maps */ 
 
-    var map = new GMaps({
-      div: '.map',
-      lat: 53.4871698,
-      lng: 10.2188059,
-      zoom: 15
-        
-    });
-    
-    map.addMarker({
-      lat: 53.4871698,
-      lng: 10.2188059,
-      title: 'Standesamt',
-      infoWindow: {
-        content: '<p>Standesamt Bergedorf</p>'
-      }
-    });
-    
-    
+
+
 });
