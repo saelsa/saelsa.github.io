@@ -2,7 +2,7 @@
 /* STYLE CONVENTIONS                                        */
 /* ---------------------------------------------------------*/
 
-/* 
+/*
 
 
 Base color: #D24D57
@@ -23,6 +23,7 @@ light shade: #fbf0f1
     box-sizing: border-box;
 }
 
+body,
 html {
     background-color: #fff;
     color: #505050;
@@ -30,6 +31,7 @@ html {
     font-size: 15px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom:1}
@@ -38,14 +40,7 @@ html {
     clear: both;
     display: block;
     height: 0;
-    visibility: hidden;    
-}
-
-body {
-/*
-    max-width: 960px;
-    margin: auto;
-*/
+    visibility: hidden;
 }
 
 section {
@@ -69,7 +64,7 @@ section {
 
 
 
-/* ------ Headers and other text -------*/
+/* ------ Headings and other text -------*/
 
 h1, h2 {
     font-family: 'Dancing Script', cursive;
@@ -81,8 +76,7 @@ h1, h2 {
 
 h1 {
     font-size: 500%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 .wedding-intro h1 {
@@ -92,7 +86,7 @@ h1 {
 }
 
 h2 {
-    font-size: 400%;   
+    font-size: 400%;
 }
 
 
@@ -133,11 +127,12 @@ a {
 
 /* ------  Buttons  --------*/
 
-button, 
+button,
 input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     margin: 20px;
+    width: 200px;
     color: #fff;
     text-decoration: none;
     border: hidden;
@@ -146,17 +141,17 @@ input[type=submit]{
     transform: scale(1.0)
     transition: transform 0.5s;
     cursor: pointer;
-}    
+}
 
 button:hover,
 input[type=submit]:hover {
     transform: scale(1.02);
-      
+
 }
 
 .buttons {
     text-align: center;
-    
+
 }
 
 
@@ -174,9 +169,12 @@ input[type=submit]:hover {
 /* HEADER                                                   */
 /* ---------------------------------------------------------*/
 
-/* Navigation */ 
+/* Navigation */
 
 /*container*/
+
+header {height: 30vh;}
+
 .nav-row {
     width: 100%;
     text-align: center;
@@ -211,7 +209,7 @@ input[type=submit]:hover {
 .main-nav li a:link,
 .main-nav li a:visited {
     color: #000;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     font-weight: 400;
     margin-top: 5px;
     text-decoration: none;
@@ -225,7 +223,7 @@ input[type=submit]:hover {
 }
 
 
-/* Sticky navigation */ 
+/* Sticky navigation */
 
 .sticky {
     position: fixed;
@@ -247,7 +245,7 @@ input[type=submit]:hover {
 }
 
 
-/* Mobile navigation */ 
+/* Mobile navigation */
 
 
 .mobile-nav-icon {
@@ -279,7 +277,7 @@ input[type=submit]:hover {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 75vh;
+    height: 70vh;
     width: 100%;
 }
 
@@ -291,7 +289,7 @@ input[type=submit]:hover {
 /* ---------------------------------------------------------*/
 
 .section-anmeldung {
-    background-color: #fbf0f1; 
+    background-color: #fbf0f1;
 }
 
 .anmeldung-box {
@@ -324,7 +322,7 @@ input[type=submit]:hover {
 .section-anmeldung p,
 .section-anmeldung ul {
     text-align: center;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 
 .survey-box a {
@@ -344,10 +342,10 @@ input[type=submit]:hover {
     color: #a12932;
 }
 
-.section-ueberblick h3 {
+.section-uebersicht h3 {
     margin-bottom: 20px;
 }
-.section-ueberblick p {
+.section-uebersicht p {
     text-align: center;
     margin: 10px;
 }
@@ -360,10 +358,6 @@ input[type=submit]:hover {
     padding-top: 50px;
 }
 
-.map {
-    width: 100%;
-    height: 500px;
-}
 
 .address-box {
     text-align: left;
@@ -384,11 +378,13 @@ input[type=submit]:hover {
 
 footer {
     background-color: #333;
-    height: 60px;
+    overflow: hidden;
 }
 
 footer p {
     color: #888;
+    text-align: center;
+    padding: 20px;
 }
 
 /* ---------------------------------------------------------*/
