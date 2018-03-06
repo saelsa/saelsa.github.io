@@ -1,17 +1,11 @@
 
 /* Big tablet to 1200px (widths smaller than the 1140px row */
 @media only screen and (max-width: 1200px) {
-/*
-    .hero-text-box {
-        width: 100%;
-        padding: 0 2%;
-    }
-*/
-    
+
     .row { padding: 0 2%;    }
-    
-    
-    
+
+    header {height: 25vh;}
+    .wedding-intro {height: 75vh;}
 }
 
 
@@ -27,30 +21,30 @@
 
 
     h2 {
-        font-size: 350%;   
+        font-size: 350%;
         font-weight: 500;
     }
-    
+
     h2:after {
         margin: 20px auto;
     }
-    
+
     h3 {
         font-size: 130%;
     }
-    
+
     .main-nav {
         margin-bottom: 20px;
     }
-    
+
     .main-nav li {
         padding: 5px 20px;
     }
-    
+
     .icon-big {
         font-size: 300%;
     }
-    
+
 }
 
 
@@ -60,19 +54,19 @@
 
     .main-nav {display: none;}
     .mobile-nav-icon {display: inline-block;}
-    
-    
+
+
     .sticky .main-nav {
         padding-top: 0;
         display: none;
     }
-    
+
     .main-nav li {
         display: block;
         padding: 0;
         text-align: center;
     }
-    
+
     .main-nav li a:link,
     .main-nav li a:visited {
         display: block;
@@ -85,8 +79,7 @@
         height: 35px;
         margin-top: 2.5px;
     }
-    
-    
+
 }
 
 /* Small phones: from 0 to 480 px*/
@@ -94,13 +87,16 @@
 /*
     section { padding: 25px 0;}
     .contact-form { width: 100%;}
-    
+
 */
-    
-    h1 {font-size: 240%;}
-    
+
+    h1 {font-size: 280%;}
+
     h2 {font-size: 220%; }
-    
+
+
+
+
 
 }
 
