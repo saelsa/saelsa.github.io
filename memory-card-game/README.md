@@ -8,6 +8,7 @@ Click on two cards, when they match they will stay visible. Otherwise they will 
 
 ## Play
 
-Either download the project or visit ....
+Either download the project or [play online](https://saelsa.github.io/memory-card-game)
+
 Ready, steady, go!
 
