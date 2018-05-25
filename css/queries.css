@@ -1,0 +1,35 @@
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 500px) {
+
+    .hero {
+        height: 75vh;
+    }
+
+    .write {
+        font-size: 300%;
+    }
+
+    .clearfix::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    .showcase {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    .showcase-item {
+        width: 50%;
+        margin: 0;
+    }
+
+
+
+
+
+}
