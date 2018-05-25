@@ -1,0 +1,123 @@
+/*General settings*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #fff;
+    color: #505050;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.animal-trading-card {
+    width: 345px;
+    background-color: #efefef;
+    margin: 10px auto;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 0 10px 0;
+}
+
+/*Image*/
+
+img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+
+/*General text properties*/
+
+h3 {
+    font-size: 170%;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0 5px 0;
+    text-align: center;
+
+}
+
+h3:after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #fff;
+    width: 100px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+/*Lists*/
+
+ul {
+    font-size: 90%;
+    list-style: none;
+}
+
+/*Specific*/
+
+.background {
+    width: inherit;
+    height: 200px;
+    background: linear-gradient(rgb(17, 90, 92), rgba(17, 90, 92, 0.76));
+    position: absolute;
+}
+
+.heading {
+    position: relative;
+}
+
+.profile {
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 0 0 10px 10px;
+    font-size: 90%;
+    background-color: white;
+}
+
+.text-intro {
+    font-weight: 500;
+    font-style: italic;
+    color: #333333;
+    font-weight: 600;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.fact {
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.text-main::before,
+.text-intro::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #b9b9b9;
+    width: 200px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.text-main {
+    text-align: justify;
+    padding: 0 5px;
+}
